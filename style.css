@@ -1,0 +1,140 @@
+/*
+    PALETA DE COLORES:
+    - Azul Oscuro (Primario): #1f3a93
+    - Azul Claro (Acento): #4a90e2
+    - Gris Suave (Fondo): #f4f7f6
+    - Blanco: #ffffff
+*/
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6; /* Fondo gris suave */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+/* --- ESTILOS DE CABECERA --- */
+.header {
+    background-color: #1f3a93; /* Azul oscuro */
+    color: white;
+    padding: 15px 25px;
+    margin: -30px -30px 20px -30px; /* Extiende la barra azul a los bordes de la caja */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.header-title {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+/* --- SECCIÓN DE INFORMACIÓN PERSONAL (Recuadro) --- */
+.personal-info {
+    padding: 20px;
+    background-color: #e6f0ff; /* Azul muy claro para el fondo */
+    border: 1px solid #4a90e2; /* Borde azul claro */
+    border-radius: 6px;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.personal-info p {
+    margin: 5px 0;
+}
+
+.personal-info strong {
+    color: #1f3a93; /* Azul oscuro para los títulos */
+    display: inline-block;
+    width: 150px; /* Alineación de dos columnas */
+}
+
+/* --- ESTILOS DE SECCIÓN GENERAL --- */
+.section {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee; /* Línea separadora suave */
+    padding-bottom: 20px;
+}
+
+.section h2 {
+    color: #4a90e2; /* Azul claro para títulos principales */
+    font-size: 1.4em;
+    margin-top: 0;
+}
+
+.section h3 {
+    color: #1f3a93; /* Azul oscuro para subtítulos */
+    font-size: 1.2em;
+    margin-top: 0;
+    border-bottom: 2px solid #ddd;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* --- CAJA DE OBJETIVO --- */
+.objective-box {
+    padding: 15px;
+    border-left: 5px solid #4a90e2;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+}
+
+.objective-box .label {
+    font-weight: bold;
+    color: #1f3a93;
+    margin-right: 5px;
+}
+
+.objective-box p {
+    display: inline;
+    margin: 0;
+}
+
+/* --- LISTAS --- */
+ul {
+    list-style-type: none; /* Quita los puntos de lista por defecto */
+    padding-left: 0;
+}
+
+ul li {
+    padding-left: 20px;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+/* Diseño de viñeta personalizada (un cuadrado o círculo azul) */
+ul li:before {
+    content: '▪'; /* O '•' para un círculo */
+    color: #4a90e2; /* Color azul claro */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    position: absolute;
+    left: 0;
+}
+
+/* Viñeta para el proceso de desarrollo (podemos usar números o checkmarks) */
+.process-list li:before {
+    content: '✓';
+    color: green;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.tech-list li:before {
+    content: '◆'; /* Diamante */
+    color: #1f3a93;
+}
